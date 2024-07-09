@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="name-logo">
+            <p><span>M</span>OHAMMAD <span>A</span>SIF</p>
+        </div> 
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Portfolio</li>
+                <li>Blogs</li>
+            </ul>
+        </div>
+        <div id="letTalk" class="lets-talk">
+            <a href="#">Lets's Talk <i class="bi bi-chat-dots-fill"></i></a>
+            <div id="my-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-head">
+                        <button id="closeModal" class="close">&times;</button>
+                        <p class="chat-bot"><span style="color: #bf40bf;  font-size: 28px;">L</span>eo</p>
+                        <p>chat partner</p>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="chats">
+                            <li>How can I help you?</li>
+                            <p>how was th</p>
+                        </ul>
+                        <p>this is a moadal body</p>
+                        <p>some text in modal box.</p>
+                    </div>
+                    <div class="modal-foot">
+                        <input type="text" name="" id="">
+                        <span><i class="bi bi-paperclip"></i></span>
+                        <span id="chatEnter" onclick="send()"><i class=" bi bi-send-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const modal = document.getElementById('my-modal');
+            const letsTalk = document.getElementById('letTalk');
+            const modalClose = document.getElementById('closeModal');
+            letsTalk.addEventListener( 'click' , (event)=> {
+                event.preventDefault();
+                modal.style.display = "block";
+            });
+            modalClose.addEventListener( 'click', ()=>{
+                modal.style.display = "none";
+            });
+            window.onclick = function(event) {
+                if(event.target == modal){
+                    modal.style.display = "none";
+                }
+            } 
+        </script>
+        <script>
+            const send = document.getElementById('chatEnter');
+            function send() {
+                alert("well clicked bro!!!");
+            }
+        
+
+        </script>
+    </header>   
+    <main>
+        <section id="sec-main">
+            <div class="intro color-white">
+                <p class="color-white">Hello,<br>
+                    <p id="name">
+                        <span class="name">I'm <span class="color">M</span>OHAMMAD <span class="color">A</span>SIF <span class="color">H</span>ASNAIN.</span><br>
+                    </p>
+                    <span class="color-white">FRONTEND DEVELOPER</span><br><br>
+                    <div class="document">
+                        <a href="">my Project </a>
+                        <a href="">Download CV  <i class="bi bi-box-arrow-up-right" style="font-size: small;"></i></a>
+                    </div>
+                </p>
+            </div>
+        </section> <!-- section - 01 -->
+        <section id="sec-2">
+            <div class="about"> 
+                <div class="div-2">
+                    <h1> ABOUT WEB DEVELPMENT</h1>
+                    <p class="indent-16">The Architect of the Web's Facade: A Look at the Front-End Developer's Role and Experience Front-end developers are the architects of the web's facade, responsible for crafting the visual and interactive elements users experience on websites and web applications. Their expertise lies in translating design concepts into functional interfaces, ensuring a seamless and engaging user journey. The Skill set of a Modern Front-End Developer:</p>
+                    <p class="indent-16">The Architect of the Web's Facade: A Look at the Front-End Developer's Role and Experience Front-end developers are the architects of the web's facade, responsible for crafting the visual and interactive elements users experience on websites and web applications. Their expertise lies in translating design concepts into functional interfaces, ensuring a seamless and engaging user journey. The Skill set of a Modern Front-End Developer:</p>
+                
+                    <h1>The Skillset of a Modern Front-End Developer:</h1>
+                    <div class="row">
+                        <div class="column">
+                            <h2>Technical Prowess:</h2>
+                            <p>Mastery of HTML, CSS, and JavaScript forms the core, with proficiency in frameworks like React, Angular, and Vue.js becoming increasingly essential.</p>
+                        </div>
+                        <div class="column">
+                            <h2>UX/UI Acumen:</h2>
+                            <p>Understanding user psychology and design principles to create intuitive and aesthetically pleasing interfaces.</p>
+                        </div>
+                        <div class="column">
+                            <h2>Responsiveness and Accessibility:</h2>
+                            <p>Ensuring websites adapt to various devices and cater to diverse user needs.</p>
+                        </div>
+                        <div class="column">
+                            <h2> Problem-solving and Collaboration:</h2>
+                            <p>Working closely with designers, back-end developers, and other stakeholders to overcome technical challenges and deliver cohesive experiences.</p>
+                        </div>
+                        <div class="column">
+                            <h2>Adaptability and Continuous Learning:</h2>
+                            <p>The tech landscape evolves rapidly, requiring developers to stay updated with the latest trends and tools.</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <h1> Experience Levels and Career Progression:</h1>
+                    <div class="row">
+                        <div class="column">
+                            <h2>Junior Developers:</h2>
+                            <p>Entry-level, focusing on building foundational skills and working on smaller projects under guidance.</p>
+                        </div>
+                        <div class="column">
+                            <h2>Mid-level Developers:</h2>
+                            <p>Possess strong technical skills and experience with various frameworks, taking ownership of larger projects and mentoring junior developers.</p>
+                        </div>
+                        <div class="column">
+                            <h2>Senior Developers:</h2>
+                            <p>Deep expertise in multiple technologies, leading complex projects, and contributing to architectural decisions.</p>
+                        </div>
+                        <div class="column">
+                            <h2>Lead Developers/Tech Leads:</h2>
+                            <p>Manage teams, define technical direction, and act as mentors and guides for the entire development process.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <h1>Beyond the Technical Expertise:</h1>
+                    <div class="row">
+                        <div class="column">
+                            <p>While technical skills are crucial, successful front-end developers possess additional qualities:</p>
+                            <ul>
+                                <li>Strong communication and collaboration skills: Effectively conveying technical concepts to non-technical stakeholders and working harmoniously within a team.</li>
+                                <li>Creativity and problem-solving: Finding innovative solutions to design and technical challenges.</li>
+                                <li>Attention to detail: Pixel-perfect execution and meticulous adherence to best practices.</li>
+                                <li>Passion for the web and user experience: Continuously seeking ways to improve the user's interaction with the digital world.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <h1>A Rewarding and Evolving Career Path:</h1>
+                    <div class="row">
+                        <div class="column">
+                            <p>Front-end development offers a dynamic and exciting career path with ample opportunities for growth and specialization. As the web continues to evolve, the demand for skilled developers who can bridge the gap between design and technology will remain strong.</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section> <!-- section - 02 -->
+        
+        <section id="footer">
+            <footer>
+                <div class="container">
+                    <div class="column f-column">
+                        <h2>Follow Us:</h2>
+                        <ul class="icon-link" target="_blank">
+                            <li><a href="https://www.facebook.com/"target="_blank"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/"target="_blank"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="https://www.twitter.com/"target="_blank"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="https://www.youtube.com/"target="_blank"><i class="bi bi-youtube"></i></a></li>                    
+                        </ul>
+                    </div>
+                    <div class="column f-column">
+                        <h2>Address:</h2>
+                        <p>1234 Main St, Anytown, CA 12345</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: <a href="mailto:info@company.com">info@company.com</a></p>
+                    </div>
+                    <div class="column f-column">
+                        <h2>Hours:</h2>
+                        <p>Monday - Friday: 9:00am - 5:00pm</p>
+                        <p>Saturday - Sunday: Closed</p>
+                </div>
+                </div>
+            </footer>
+        </section> <!-- footer -->
+    </main>
+</body>
+</html>

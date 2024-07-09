@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google</title>
+</head>
+<body>
+    <main>
+        <section id="logo">
+            <div class="logo">
+                <h1>SHADOW | WEB</h1>
+            </div>
+        </section>
+        <section id="searchBox">
+            <div class="searchBox">
+                <label for="">🔍</label>
+                <input type="text" name="" id="">
+                <label for="">🎙️</label>
+                <label for="">🧣</label>
+            </div>
+        </section>
+        <section id="apps">
+            <div id="appcard" >
+               <div class="edit">⁑</div>
+               <div class="icon">➕</div>
+               <div class="name">Add Shortcut</div>
+            </div>
+        </section>
+        <script>
+            function click() {
+                console.log("click confirmed !!!!");
+            }
+            const addcard = document.getElementById('appcard');
+            const cardContainer = document.getElementById('apps');
+
+            addcard.addEventListener( 'click', () => {
+                const cardName = prompt(" Enter the Name :: ");
+                const cardLink = prompt(" Enter the Link :: ");
+                if(cardName===' ' || cardLink=== ' '){
+                    alert(" please enter valid input!!!");
+                }else{
+                    const card = document.createElement('div');
+                    card.classList.add('appcard');
+                    card.innerHTML = `
+                        <div id="appcard" >
+                            <div class="edit">⁑</div>
+                            <div class="icon">➕</div>
+                            <div class="name">${cardName}</div>
+                        </div>
+                    `;
+                    cardContainer.appendChild(card);
+                }
+
+            });
+        </script>
+    </main>
+    <footer>
+
+    </footer>
+
+</body> 
+</html>
